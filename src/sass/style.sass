@@ -7,17 +7,18 @@
 $color-blue: #5290EA
 $color-orange: #F28B64
 $color-gray: #E2E2E2
-
-
+$color-black: #000000
 
 .container
     max-width: 1140px
     margin: 0 auto
 
 .main-section
-    height: 800px
+    min-height: 800px
     background: #F0F0F0
     padding-top: 16px
+    overflow: hidden
+    position: relative
     &__nav-container
         display: flex
         flex-direction: row
@@ -26,7 +27,18 @@ $color-gray: #E2E2E2
         align-items: center
     &__logo
         width: 134px
-
+    &__content-container
+        position: relative
+        display: flex
+        flex-direction: row
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 34px
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
 .nav-menu
     &__list
         display: flex
@@ -44,7 +56,7 @@ $color-gray: #E2E2E2
     img:hover
         transform: scale(1.02)
         transition: 1s
-        
+
     &__rectangle-blue
         position: absolute
         width: 565.95px
@@ -78,3 +90,80 @@ $color-gray: #E2E2E2
         left: 10px
         transform: rotate(-36.15deg)
         z-index: 1
+
+.right-wrapper
+    width: 372px
+    position: absolute
+    top: 150px
+    right: 76px
+    z-index: 5
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+    &__text
+        margin-bottom: 20px
+        font-size: 16px
+
+
+.icons
+    display: inline-flex
+    gap: 17px
+    &__item
+        width: 40px
+        height: 40px
+        
+.title
+    font-size: 72px
+    position: relative
+    &__hr
+        width: 65px
+        position: absolute
+        bottom: 0
+        margin: 0
+        border: none
+        border-top: 1px solid $color-black
+.buttons
+    display: inline-flex
+    &__main-btn
+        margin-right: 32px
+        width: 200px
+        height: 60px
+        border-radius: 100px
+        border: none
+        background-color: $color-orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        color: white
+        font-family: 'Montserrat'
+        font-size: 18px
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+        img
+            margin-right: 12px
+    &__text
+        font-size: 16px
+.elipse
+    height: 194px
+    width: 194px
+    background: linear-gradient(143.92deg, #ED7B50 14.85%, #488AEA 53.25%, #2C2C2C 85.74%)
+    opacity: 40%
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    &--big
+        width: 283px
+        height: 282px
+    &__subtract
+        width: 129.33px
+        height: 129.33px
+        border-radius: 150px
+        background-color: $color-gray
+        &--big
+            width: 188px
+            height: 188px
