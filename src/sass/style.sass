@@ -208,6 +208,7 @@ $color-black: #000000
             background-color: #ffffff
 .second-section
     min-height: 700px
+    overflow: height
     &__container
         padding-top: 32px
         position: relative
@@ -215,6 +216,7 @@ $color-black: #000000
         margin-bottom: 40px
     &__card-box
         display: inline-flex
+        justify-content: center
         gap: 30px
         margin-bottom: 25px
     &__icons-box
@@ -319,6 +321,7 @@ $color-black: #000000
         position: absolute
         left: -80px
         bottom: 0
+        width: 637px
     &__container
         min-height: 272px
         align-items: center
@@ -328,3 +331,130 @@ $color-black: #000000
         margin-bottom: 20px
 
 
+@media (max-width:1199px)
+    .container
+        width: 960px
+        .left-wrapper
+            &__img
+                width: 700px
+                height: auto
+            &__rectangle-blue
+                width: 533.95px
+                height: 181px
+            &__rectangle-orange
+                width: 575.43px
+                height: 161px
+            &__rectangle-gray
+                width: 566.97px
+                height: 163px
+        .right-wrapper
+            top: 124px
+            right: 32px
+    .main-section
+        overflow: hidden
+        min-height: 650px
+        &__first-elipse
+            position: absolute
+            top: 84px
+            right: 41px
+        &__second-elipse
+            position: absolute
+            right: -120px
+            top: 488px
+    .card-item
+        width: 272px
+        height: 258px
+        &:hover
+            transform: scale(1.02)
+            transition: 2s
+        &__img
+            height: 224px
+            &:hover
+                height: 230px
+        &__text
+            width: 280px
+            top: 100px
+    .second-section
+        min-height: 560px
+        &__second-elipse
+            top: 270px
+            left: -14px
+        &__first-elipse
+            top: 78px
+            right: -23px
+        &__card-box
+            display: flex
+            justify-self: center
+    .icons-item
+        &__img
+            margin-right: 10px
+            width: 70px
+    
+    .third-section
+        &__container 
+            padding-left: 60px
+        &__right-wraper
+            max-width: 496px
+    .footer
+        &__img
+            width: 460px
+
+@media (max-width:991px)
+.container
+    width: 720px
+    .main-section
+        &__logo
+            width: 100px
+    .left-wrapper
+        &__img 
+            width: 550px
+        &__rectangle-blue
+            width: 430px
+            height: 140px      
+            top: 120px
+            left: -70px
+        &__rectangle-orange
+            width: 465px
+            height: 138px
+            top: 125px
+            left: -49px
+        &__rectangle-gray
+            width: 440px
+            height: 138px
+            top: 149px
+            left: 0px
+    .title
+        font-size: 48px
+        &__hr
+            width: 46px
+    .right-wrapper
+        top: 150px
+        right: -60px
+        &__text
+            margin-bottom: 8px
+            font-size: 13px
+    .buttons
+        &__main-btn
+            margin-right: 10px
+            width: 162px
+            height: 55px
+            font-size: 16px
+        &__icons-btn
+            font-size: 12px
+.main-section
+    min-height: 530px
+    &__second-elipse
+        right: -120px
+        top: 386px
+
+
+
+
+    
+@media (max-width:767px)
+    .container
+        width: 540px
+
+@media (max-width:575px)
+    .container
+        width: 100%
