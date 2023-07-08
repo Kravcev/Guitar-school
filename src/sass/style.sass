@@ -222,11 +222,16 @@ $color-orange: #F28B64
         top: 80px
         right: -60px
         z-index: -1
+        .elipse__subtract
+            background: #ffff
+
     &__second-elipse
         position: absolute
         top: 364px
         left: -60px
         z-index: -1
+        .elipse__subtract
+            background: #ffff
 
 .cards-item
     position: relative
@@ -424,9 +429,10 @@ $color-orange: #F28B64
             margin-bottom: 10px
         &__first-elipse
             right: -35px
+            top: 60px
         &__second-elipse 
-            top: 262px
-            left: -35px
+            top: 242px
+            left: -54px
         
     .cards-item 
         width: 220px
@@ -479,6 +485,34 @@ $color-orange: #F28B64
 @media (max-width: 767px)
     .container
         width: 540px
+    .nav-menu
+        display: none
+    .hamburger
+        width: 30px
+        height: 14px
+        position: absolute
+        top: 40px
+        right: 30px
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+                
+
 
 @media (max-width: 575px)
     .container
